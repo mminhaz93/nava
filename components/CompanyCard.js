@@ -16,7 +16,7 @@ const CompanyCard = ({ company }) => {
   } = company;
   return (
     <div class='p-4 lg:w-3/5 w-full'>
-      <div class='flex border-2 rounded-lg border-gray-200 border-opacity-50 pt-8 pb-3  flex-col text-center'>
+      <div class='flex border border-gray-900 border-opacity-50 pt-8 pb-3  flex-col text-center'>
         <h2 class='text-lg title-font font-semibold mb-3'>{company_name}</h2>
         <Details
           state={company_state}

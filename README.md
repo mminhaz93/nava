@@ -1,4 +1,7 @@
-## Getting Started
+# Nava
+
+[Deployed app](https://nava-gilt.vercel.app/)
+## Setup
 
 First, run the development server:
 
