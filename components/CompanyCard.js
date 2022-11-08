@@ -14,19 +14,20 @@ const CompanyCard = ({ company }) => {
     broker_commission_sum,
     participants_sum,
   } = company;
+
   return (
-    <div class='p-4 lg:w-3/5 w-full'>
-      <div class='flex border border-gray-900 border-opacity-50 pt-8 pb-3  flex-col text-center'>
-        <h2 class='text-lg title-font font-semibold mb-3'>{company_name}</h2>
+    <div className='p-4 lg:w-3/5 w-full'>
+      <div className='flex border border-gray-900 border-opacity-50 pt-8 pb-3  flex-col text-center'>
+        <h2 className='text-lg title-font font-semibold mb-3'>{company_name}</h2>
         <Details
           state={company_state}
           employee={employee_count}
           year={plan_year}
         />
 
-        <hr class='border-spacing-1 w-11/12 my-2 mx-auto' />
+        <hr className='border-spacing-1 w-11/12 my-2 mx-auto' />
         <button
-          class='inline-flex  text-sky-700 border-0 py-1 px-4 focus:outline-none hover:text-sky-800 rounded mx-auto'
+          className='inline-flex  text-sky-700 border-0 py-1 px-4 focus:outline-none hover:text-sky-800 rounded mx-auto'
           onClick={() => setShow((prevShow) => !prevShow)}
         >
           {show ? 'Show less' : 'Show more'}

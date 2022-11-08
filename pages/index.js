@@ -23,8 +23,8 @@ const Home = () => {
       <main className='flex flex-col justify-center items-center px-5 sm:px-8 py-3'>
         <h1 className='text-3xl font-bold text-sky-700'>Nava</h1>
 
-        {data.map((company) => (
-          <CompanyCard company={company} key={company.ein} />
+        {data.map((company, idx) => (
+          <CompanyCard company={company} key={idx} />
         ))}
       </main>
     </div>
